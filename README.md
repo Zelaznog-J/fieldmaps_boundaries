@@ -2,11 +2,13 @@
 
 Datos geoespaciales con **Python, SQL y DuckDB**.
 
-📓 Notebook: [`FieldMaps_geoboundaries_reutilizable.ipynb`](FieldMaps_geoboundaries_reutilizable.ipynb)
+📓 Notebook: [`FieldMaps_geoboundaries_reutilizable.ipynb`](FieldMaps_geoboundaries_reutilizable.ipynb) · [Abrir en Colab](https://colab.research.google.com/github/Zelaznog-J/fieldmaps_boundaries/blob/main/FieldMaps_geoboundaries_reutilizable.ipynb)
+
+> **Nota:** el notebook se publica **sin salidas guardadas**, para no asociar cifras o mapas de una ejecución anterior a selecciones nuevas. Los resultados que se citan abajo y la imagen provienen de una ejecución de ejemplo en Colab (2 de noviembre de 2026) y pueden variar si FieldMaps actualiza la fuente. Para verlos, ejecuta el notebook y responde los `input()`.
 
 ![Comuna de Penco (Región del Biobío) visualizada con Lonboard](mapa_penco.png)
 
-*Ejemplo de salida: `CHL` → Región del Biobío → Penco.*
+*Captura de la ejecución de ejemplo: `CHL` → Región del Biobío → Penco (no se guarda dentro del notebook).*
 
 ## Overview
 
@@ -38,6 +40,8 @@ Notebook reutilizable que consulta directamente el archivo Parquet público de [
 9. **Visualización** interactiva con Lonboard.
 
 ## Key Findings
+
+*Observados en la ejecución de ejemplo (2 de noviembre de 2026); las cifras dependen de la versión de la fuente.*
 
 - **Un solo flujo, cualquier territorio:** el mismo notebook sirvió para recorrer los 318 `adm0_src` y llegar, por ejemplo, desde `CHL` → Región del Biobío → comuna de Penco (1 registro, 0 geometrías nulas o inválidas).
 - **Consultar sin descargar:** DuckDB filtra el Parquet remoto y solo transfiere lo necesario, lo que hace viable trabajar con ~180 mil polígonos desde Colab.
