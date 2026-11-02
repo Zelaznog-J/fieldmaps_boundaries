@@ -4,6 +4,10 @@ Datos geoespaciales con **Python, SQL y DuckDB**.
 
 📓 Notebook: [`FieldMaps_geoboundaries_reutilizable.ipynb`](FieldMaps_geoboundaries_reutilizable.ipynb)
 
+![Comuna de Penco (Región del Biobío) visualizada con Lonboard](mapa_penco.png)
+
+*Ejemplo de salida: `CHL` → Región del Biobío → Penco.*
+
 ## Overview
 
 Notebook reutilizable que consulta directamente el archivo Parquet público de [FieldMaps (`adm4_polygons`)](https://data.fieldmaps.io/edge-matched/open/intl/adm4_polygons.parquet) (~180 mil registros, 318 valores de `adm0_src`) y permite elegir, de forma interactiva, un país, una región y opcionalmente una comuna/unidad ADM3. El resultado es un GeoJSON listo para usar y un mapa interactivo, **sin descargar el archivo completo ni editar las consultas SQL**.
